@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VerifyView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anglebaby3" translatesAutoresizingMaskIntoConstraints="NO" id="MN9-j6-PoR">
+                    <rect key="frame" x="157" y="100" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="8OV-RJ-msg"/>
+                        <constraint firstAttribute="height" constant="60" id="eM2-W2-acf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydc-sY-ow0">
+                    <rect key="frame" x="120" y="607" width="135" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="9qf-dZ-2qL"/>
+                        <constraint firstAttribute="width" constant="135" id="xb7-yd-0P9"/>
+                    </constraints>
+                    <state key="normal" title="登录其他账户"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr6-vA-NpD" customClass="TopButton">
+                    <rect key="frame" x="62" y="284" width="250" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="BbR-FA-7ld"/>
+                        <constraint firstAttribute="height" constant="100" id="sR7-7e-yb8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="点击进行指纹解锁" image="alipay_msp_mini_finger">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="VerifyAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="jfh-VN-4fu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ydc-sY-ow0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="10f-6g-xnK"/>
+                <constraint firstItem="MN9-j6-PoR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ADy-7e-gHI"/>
+                <constraint firstItem="MN9-j6-PoR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="D96-u2-eHS"/>
+                <constraint firstItem="xr6-vA-NpD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KFu-2g-gf4"/>
+                <constraint firstAttribute="bottom" secondItem="Ydc-sY-ow0" secondAttribute="bottom" constant="30" id="kTH-3P-5PO"/>
+                <constraint firstItem="xr6-vA-NpD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="z8X-qL-DWg"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alipay_msp_mini_finger" width="45" height="45"/>
+        <image name="anglebaby3" width="950" height="1071"/>
+    </resources>
+</document>
